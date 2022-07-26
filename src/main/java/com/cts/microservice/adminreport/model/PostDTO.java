@@ -16,7 +16,7 @@ public class PostDTO {
 	private String username;
 	private String description;
 	private Date targetDate;
-	private String image;
+	private String postImage;
 	private boolean isDone;
 	private List<PostReport> reports = new ArrayList<>();
 }
