@@ -29,5 +29,14 @@ public class AdminServiceImpl implements AdminService {
 		param.put("id",id);
 		restTemplate.delete(uri,param);
 	}
+	
+	@Override
+	public void removeThePost(Long id) {
+		String uri ="http://localhost:8082/post/unreport/{id}";
+		Map<String , Long > param = new HashMap<String,Long>();
+		RestTemplate restTemplate = new RestTemplate();
+		param.put("id",id);
+		restTemplate.put(uri, null ,param);
+	}
 
 }

@@ -10,4 +10,6 @@ public interface AdminService {
 	
 	void deleteThePost(Long id);
 	
+	void removeThePost(Long id);
+	
 }
